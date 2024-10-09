@@ -1,8 +1,8 @@
-import {createRouter, createWebHistory} from "vue-router";
+import {createRouter, createWebHashHistory} from "vue-router";
 import Home from '@/pages/Home.vue'
 import CurrentClean from '@/pages/CurrentClean.vue'
 const routers = createRouter({
-    history: createWebHistory(),
+    history: createWebHashHistory(),
     routes: [
         { path: '/', name: 'home', component: Home },
         { path: '/clean', name: 'clean', component: () => import("@/pages/Clean.vue")},
