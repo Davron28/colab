@@ -17,7 +17,7 @@
         <router-link to="/info" class="header__nav-link">{{ $t("headerLink.info") }}</router-link>
       </li>
       <li>
-        <a href="#!" class="header__nav-lang" :class="{ active: !burger }" @click="changeLang">{{ $t("lang") }}</a>
+        <button class="header__nav-lang" :class="{ active: !burger }" @click="changeLang">{{ $t("lang") }}</button>
       </li>
       <li
         class="header__burger-line_list"
